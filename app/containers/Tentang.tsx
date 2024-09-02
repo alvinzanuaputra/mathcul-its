@@ -2,11 +2,19 @@
 import { useState, useEffect } from 'react';
 import toast from 'react-hot-toast';
 import Image from 'next/image';
+import AOS from "aos";
 
 const Timer: React.FC = () => {
-  const [timeLeft, setTimeLeft] = useState<number>(3600); // Waktu dalam detik (contoh: 1 jam = 3600 detik)
+  const [timeLeft, setTimeLeft] = useState<number>(10); // Waktu dalam detik (contoh: 1 jam = 3600 detik)
   const [isTimerActive, setIsTimerActive] = useState<boolean>(true);
   const [notificationShown, setNotificationShown] = useState<boolean>(false);
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1500,
+      once: false,
+    });
+  }, []);
 
   useEffect(() => {
     let timer: NodeJS.Timeout;
@@ -43,7 +51,7 @@ const Timer: React.FC = () => {
   };
 
   return (
-    <div id="about" className='bg-slate-900'>
+    <div id="about" className='bg-slate-900' data-aos="slide-left" data-aos-duration="2000">
       <div
         className="pt-8 pb-32 mx-2 lg:mx-auto text-white rounded-lg shadow-lg flex flex-col justify-center items-center h-screen max-w-screen-sm">
         <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-center">

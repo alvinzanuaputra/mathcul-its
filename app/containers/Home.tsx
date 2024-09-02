@@ -143,7 +143,7 @@ const HomeLayout: React.FC = () => {
             height={170}
             width={170}
             alt="MATHCUL LOGO"
-            className="cursor-pointer shadow-md"
+            className="cursor-pointer shadow-md pb-10"
           />
         </button>
       </div>
