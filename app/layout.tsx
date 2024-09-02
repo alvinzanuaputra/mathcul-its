@@ -6,8 +6,8 @@ import Providers from "./components/Providers";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Weapmath. Game genre battle mobile terbaik!",
-  description: "Weapmath. Game genre battle mobile terbaik!",
+  title: "Mathcul. Game genre battle mobile terbaik!",
+  description: "Mathcul. Game genre battle mobile terbaik!",
 };
 
 type RootLayoutProps = {
