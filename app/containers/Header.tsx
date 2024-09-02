@@ -154,7 +154,7 @@ const Header: React.FC = () => {
                   </div>
                 </div>
                 <p className="text-white text-sm font-semibold italic mt-8">
-                  Inovasi Bisnis DIgital Game Online Sebagai Media Pembelajaran Etnomatematika
+                  Inovasi Bisnis Digital Game Online Sebagai Media Pembelajaran Etnomatematika
                 </p>
                 <div className="border-pink-500 border-t-2 mt-3"></div>
 
