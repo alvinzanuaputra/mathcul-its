@@ -163,8 +163,8 @@ const Header: React.FC = () => {
                   <HeaderButton section="GAME" onClick={() => handleClick("home")} />
                   <HeaderButton section="WAKTU" onClick={() => handleClick("about")} />
                   <HeaderButton section="KARAKTER" onClick={() => handleClick("karakter")} />
-                  <HeaderButton section="ABOUT US" onClick={() => handleClick("education")} />
-                  <HeaderButton section="TUTORIAL" onClick={() => handleClick("tutorial")} />
+                  <HeaderButton section="TENTANG" onClick={() => handleClick("education")} />
+                  <HeaderButton section="INTERFACE" onClick={() => handleClick("tutorial")} />
                 </div>
                 <div className="fixed bottom-4">
                   <div onClick={() => handleClick("home")}>
@@ -187,8 +187,8 @@ const Header: React.FC = () => {
             <HeaderButton section="GAME" onClick={() => handleClick("home")} />
             <HeaderButton section="WAKTU" onClick={() => handleClick("about")} />
             <HeaderButton section="KARAKTER" onClick={() => handleClick("karakter")} />
-            <HeaderButton section="ABOUT US" onClick={() => handleClick("education")} />
-            <HeaderButton section="TUTORIAL" onClick={() => handleClick("tutorial")} />
+            <HeaderButton section="TENTANG" onClick={() => handleClick("education")} />
+            <HeaderButton section="INTERFACE" onClick={() => handleClick("tutorial")} />
           </div>
           <div onClick={handleToast} className="hidden lg:block">
             <button className="bg-pink-600 rounded-md px-5 py-1.5 text-white hover:bg-pink-400 duration-500 text-lg font-semibold">
